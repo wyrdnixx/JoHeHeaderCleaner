@@ -1,0 +1,9 @@
+13.01.2020 23:56:25: Programm gestartet...
+13.01.2020 23:56:25: Lese Konfigurationsdatei: D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
+13.01.2020 23:56:25: MonitorFolder aufgenommen: C:\temp
+13.01.2020 23:56:25: Header aufgenommen: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
+13.01.2020 23:56:25: Header aufgenommen: Dies ist ein Test Header
+13.01.2020 23:57:03: Neue Datei gefunden: Workfile6 - Kopie (2).csv
+13.01.2020 23:57:03: Ist eine CSV... Analysiere
+13.01.2020 23:57:03: Header gefunden. Lösche erste Zeile: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
+13.01.2020 23:57:08: Programm beendet...
