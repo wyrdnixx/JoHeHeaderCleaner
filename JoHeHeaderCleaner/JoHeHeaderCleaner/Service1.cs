@@ -30,13 +30,12 @@ namespace JoHeHeaderCleaner
 
         public Service1()
         {
+            writeLog("Service gestartet...");
             InitializeComponent();
-
-            _filesystemwatcher = new FileSystemWatcher();
-
-            
+                        
+            _filesystemwatcher = new FileSystemWatcher();            
             searchHeaders = new List<string>();
-
+            
         }
 
         protected override void OnStart(string[] args)
@@ -61,11 +60,11 @@ namespace JoHeHeaderCleaner
                 _filesystemwatcher.Renamed += FileSystemWatcher;
 
                 _filesystemwatcher.EnableRaisingEvents = true;
-            } catch (Exception ex)
+            } catch (Exception e)
             {
-
-                writeLog("ERROR: " + ex.Message);
-                writeLog("DEBUG: " + ex.StackTrace);
+                writeErrorEventlog(e.Message + "%n" + e.StackTrace);
+                writeLog("ERROR: " + e.Message);
+                writeLog("DEBUG: " + e.StackTrace);
                 System.Environment.Exit(1);
             }
 
@@ -82,14 +81,18 @@ namespace JoHeHeaderCleaner
 
         private static void FileSystemWatcher(object sender, FileSystemEventArgs e)
         {
-            writeLog("Neue Datei gefunden: " + e.Name);
+            //writeLog("Neue Datei gefunden: " + e.Name);
 
             try
             {
                 string extension = Path.GetExtension(e.Name);
                 if (extension == ".csv")
                 {
-                    writeLog("Ist eine CSV... Analysiere");
+                    writeLog("Neue CSV Datei gefunden... Analysiere: " + e.Name);
+
+                    // 1 Sekunde warten - Ggf. Virenscanner-Zugriff auf die Datei etc.
+                    System.Threading.Thread.Sleep(1000);
+
 
                     string line1 = File.ReadLines(e.FullPath).First(); // gets the first line from file.
 
@@ -114,6 +117,7 @@ namespace JoHeHeaderCleaner
                 }
                 } catch (Exception ex)
             {
+                writeErrorEventlog(ex.Message + "%n" + ex.StackTrace);
                 writeLog("ERROR: " + ex.Message);
                 writeLog("DEBUG: " + ex.StackTrace);
             }
@@ -159,10 +163,14 @@ namespace JoHeHeaderCleaner
 
                     counter++;
                 }
+                file.Close();
             }catch (Exception e)
             {
+                writeErrorEventlog(e.Message + "%n" + e.StackTrace);
+
                 writeLog("ERROR: Konfig Datei konnte nicht gelesen werden: " + e.Message);
                 writeLog("DEBUG: " + e.StackTrace);
+                file.Close();
                 System.Environment.Exit(1);
             }
             
@@ -178,13 +186,19 @@ namespace JoHeHeaderCleaner
                 // Purge Logfile
                 FileInfo logfileInfo = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + "log.txt");
 
-                // größer  1 MB
-                if (logfileInfo.Length > 1000000)
+               if (File.Exists(logfileInfo.FullName)) 
                 {
-                    File.Delete(AppDomain.CurrentDomain.BaseDirectory + "log.txt");
+
+                    // größer  1 MB
+                    if (logfileInfo.Length > 1000000)
+                    {
+                        File.Delete(AppDomain.CurrentDomain.BaseDirectory + "log.txt");
+                    }
                 }
-            }catch (Exception )
+
+            }catch (Exception e)
             {
+                writeErrorEventlog(e.Message + "%n" + e.StackTrace);
                 System.Environment.Exit(1);
             }
             
@@ -199,8 +213,40 @@ namespace JoHeHeaderCleaner
             sw.WriteLine(DateTime.Now.ToString() + ": " + _message);
             sw.Close();
               }
-             catch(Exception e) { System.Environment.Exit(1);  }
+             catch(Exception e) {
+                writeErrorEventlog(e.Message + "%n" + e.StackTrace);
+                System.Environment.Exit(1);
+            }
 
+        }
+
+        public static void writeErrorEventlog(String _msg)
+        {
+
+            /*
+
+            source String
+            Die Quelle, unter der die Anwendung auf dem angegebenen Computer registriert ist.
+
+            message    String
+            Die in das Ereignisprotokoll zu schreibende Zeichenfolge.
+
+            type    EventLogEntryType
+            Einer der EventLogEntryType - Werte.
+
+            eventID    Int32
+            Der anwendungsspezifische Bezeichner für das Ereignis.
+
+            category    Int16
+            Die der Meldung zugeordnete anwendungsspezifische Unterkategorie.
+            */
+            String source = "JoHeHeaderCleaner";
+            String msg = _msg ;
+            Int32 myEventID = 1;
+            Int16 myCategory = 1;
+
+            EventLog.WriteEntry(source, msg,
+                 EventLogEntryType.Error, myEventID, myCategory);
         }
 
 

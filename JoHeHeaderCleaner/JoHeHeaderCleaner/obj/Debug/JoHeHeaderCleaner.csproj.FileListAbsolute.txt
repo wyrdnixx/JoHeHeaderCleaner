@@ -3,3 +3,4 @@ D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleane
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.pdb
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.exe
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.pdb
+D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.csprojResolveAssemblyReference.cache
