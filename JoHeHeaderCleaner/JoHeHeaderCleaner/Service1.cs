@@ -52,15 +52,24 @@ namespace JoHeHeaderCleaner
             writeLog("Lese Konfigurationsdatei: " + configfile);
             readConfig(configfile);
 
+            try
+            {
+
+                _filesystemwatcher.Path = monitorFolder;
+
+                _filesystemwatcher.Created += FileSystemWatcher;
+                _filesystemwatcher.Renamed += FileSystemWatcher;
+
+                _filesystemwatcher.EnableRaisingEvents = true;
+            } catch (Exception ex)
+            {
+
+                writeLog("ERROR: " + ex.Message);
+                writeLog("DEBUG: " + ex.StackTrace);
+                System.Environment.Exit(1);
+            }
 
 
-
-            _filesystemwatcher.Path = monitorFolder;
-            
-            _filesystemwatcher.Created += FileSystemWatcher;
-            _filesystemwatcher.Renamed += FileSystemWatcher;
-
-            _filesystemwatcher.EnableRaisingEvents = true;
 
         }
 
@@ -75,31 +84,40 @@ namespace JoHeHeaderCleaner
         {
             writeLog("Neue Datei gefunden: " + e.Name);
 
-            string extension = Path.GetExtension(e.Name);
-            if (extension == ".csv")
+            try
             {
-                writeLog("Ist eine CSV... Analysiere");
-
-                string line1 = File.ReadLines(e.FullPath).First(); // gets the first line from file.
-
-                bool found = false;
-
-                // Vergleiche mit Einträgen in Header-Suchliste
-                for (int i = 0; i < searchHeaders.Count; i++)
+                string extension = Path.GetExtension(e.Name);
+                if (extension == ".csv")
                 {
+                    writeLog("Ist eine CSV... Analysiere");
 
-                    if (line1 == searchHeaders[i])
+                    string line1 = File.ReadLines(e.FullPath).First(); // gets the first line from file.
+
+                    bool found = false;
+
+                    // Vergleiche mit Einträgen in Header-Suchliste
+                    for (int i = 0; i < searchHeaders.Count; i++)
                     {
-                        found = true;
-                        writeLog("Header gefunden. Lösche erste Zeile: " + line1);
-                        File.WriteAllLines(e.FullPath, File.ReadAllLines(e.FullPath).Skip(1));
+
+                        if (line1 == searchHeaders[i])
+                        {
+                            found = true;
+                            writeLog("Header gefunden. Lösche erste Zeile: " + line1);
+                            File.WriteAllLines(e.FullPath, File.ReadAllLines(e.FullPath).Skip(1));
+                        }
+                    }
+
+                    if (!found)
+                    {
+                        writeLog("Header nicht gefunden. Nicht bearbeiten...");
                     }
                 }
-
-                if (!found){
-                    writeLog("Header nicht gefunden. Nicht bearbeiten...");
-                }
+                } catch (Exception ex)
+            {
+                writeLog("ERROR: " + ex.Message);
+                writeLog("DEBUG: " + ex.StackTrace);
             }
+            
 
         }
 
@@ -145,6 +163,7 @@ namespace JoHeHeaderCleaner
             {
                 writeLog("ERROR: Konfig Datei konnte nicht gelesen werden: " + e.Message);
                 writeLog("DEBUG: " + e.StackTrace);
+                System.Environment.Exit(1);
             }
             
 
@@ -152,15 +171,35 @@ namespace JoHeHeaderCleaner
 
         public static void writeLog(String _message)
         {
+
+            
+            try
+            {
+                // Purge Logfile
+                FileInfo logfileInfo = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + "log.txt");
+
+                // größer  1 MB
+                if (logfileInfo.Length > 1000000)
+                {
+                    File.Delete(AppDomain.CurrentDomain.BaseDirectory + "log.txt");
+                }
+            }catch (Exception )
+            {
+                System.Environment.Exit(1);
+            }
+            
+
+
+
             StreamWriter sw = null;
 
-            // try
-            // {
+             try
+             {
             sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "log.txt", true);
             sw.WriteLine(DateTime.Now.ToString() + ": " + _message);
             sw.Close();
-            //  }
-            // catch { }
+              }
+             catch(Exception e) { System.Environment.Exit(1);  }
 
         }
 
