@@ -1,11 +1,34 @@
-14.01.2020 06:59:14: Neue Datei gefunden: Test - Kopie.csv
-14.01.2020 06:59:14: Ist eine CSV... Analysiere
-14.01.2020 06:59:14: Header gefunden. Lösche erste Zeile: Dies ist ein Test Header
-14.01.2020 06:59:54: Programm beendet...
-14.01.2020 21:10:50: Service gestartet...
-14.01.2020 21:10:50: Programm gestartet...
-14.01.2020 21:10:50: Lese Konfigurationsdatei: D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
-14.01.2020 21:10:50: MonitorFolder aufgenommen: C:\temp
-14.01.2020 21:10:50: Header aufgenommen: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
-14.01.2020 21:10:50: Header aufgenommen: Dies ist ein Test Header
-14.01.2020 21:29:09: Programm beendet...
+16.01.2020 21:37:14: Neue CSV Datei gefunden... Analysiere: Workfile6 _4.csv
+16.01.2020 21:37:15: Header gefunden. Lösche erste Zeile: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
+16.01.2020 21:37:15: Benenne Datei um von : C:\temp\Workfile6 _4.csv -> C:\temp\_Cleaned_Workfile6 _4.csv
+16.01.2020 21:37:38: Neue CSV Datei gefunden... Analysiere: Workfile6 _4.csv
+16.01.2020 21:37:39: Header gefunden. Lösche erste Zeile: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
+16.01.2020 21:37:39: ERROR: Der Zugriff auf den Pfad "C:\temp\Workfile6 _4.csv" wurde verweigert.
+16.01.2020 21:37:39: DEBUG:    bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   bei System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   bei System.IO.File.WriteAllLines(String path, IEnumerable`1 contents)
+   bei JoHeHeaderCleaner.Service1.FileSystemWatcher(Object sender, FileSystemEventArgs e) in D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\Service1.cs:Zeile 111.
+16.01.2020 21:38:02: Programm beendet...
+16.01.2020 21:40:09: Service gestartet...
+16.01.2020 21:40:09: Programm gestartet...
+16.01.2020 21:40:09: Lese Konfigurationsdatei: D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
+16.01.2020 21:40:09: MonitorFolder aufgenommen: C:\temp
+16.01.2020 21:40:09: Prefix für bearbeitete Dateien: _Cleaned_
+16.01.2020 21:40:09: Header aufgenommen: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
+16.01.2020 21:40:09: Header aufgenommen: Dies ist ein Test Header
+16.01.2020 21:40:17: Neue CSV Datei gefunden... Analysiere: Workfile6 _5.csv
+16.01.2020 21:40:19: Header gefunden. Lösche erste Zeile: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
+16.01.2020 21:40:19: ERROR: Der Zugriff auf den Pfad "C:\temp\Workfile6 _5.csv" wurde verweigert.
+16.01.2020 21:40:19: DEBUG:    bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   bei System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   bei System.IO.File.WriteAllLines(String path, IEnumerable`1 contents)
+   bei JoHeHeaderCleaner.Service1.FileSystemWatcher(Object sender, FileSystemEventArgs e) in D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\Service1.cs:Zeile 111.
+16.01.2020 21:40:39: Programm beendet...

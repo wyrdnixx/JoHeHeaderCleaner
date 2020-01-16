@@ -1,6 +1,6 @@
 ﻿namespace JoHeHeaderCleaner
 {
-    partial class Service1
+    partial class JoHeHeaderCleaner
     {
         /// <summary> 
         /// Erforderliche Designervariable.

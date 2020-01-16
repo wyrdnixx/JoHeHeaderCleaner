@@ -11,7 +11,7 @@ using System.IO;
 
 namespace JoHeHeaderCleaner
 {
-    public partial class Service1 : ServiceBase
+    public partial class JoHeHeaderCleaner : ServiceBase
     {
 
 
@@ -24,11 +24,13 @@ namespace JoHeHeaderCleaner
 
         public String monitorFolder;
 
+        public String CleanedPrefix;
+
         private static List<String> searchHeaders;
 
 
 
-        public Service1()
+        public JoHeHeaderCleaner()
         {
             writeLog("Service gestartet...");
             InitializeComponent();
@@ -79,14 +81,14 @@ namespace JoHeHeaderCleaner
 
                 
 
-        private static void FileSystemWatcher(object sender, FileSystemEventArgs e)
+        private  void FileSystemWatcher(object sender, FileSystemEventArgs e)
         {
             //writeLog("Neue Datei gefunden: " + e.Name);
 
             try
             {
                 string extension = Path.GetExtension(e.Name);
-                if (extension == ".csv")
+                if (extension == ".csv" && !e.Name.Contains(CleanedPrefix))
                 {
                     writeLog("Neue CSV Datei gefunden... Analysiere: " + e.Name);
 
@@ -107,6 +109,11 @@ namespace JoHeHeaderCleaner
                             found = true;
                             writeLog("Header gefunden. Lösche erste Zeile: " + line1);
                             File.WriteAllLines(e.FullPath, File.ReadAllLines(e.FullPath).Skip(1));
+
+                            // geänderte Datei umbenennen:
+                            String DestFileName = Path.Combine(Path.GetDirectoryName(e.FullPath) + "\\" + CleanedPrefix + e.Name);
+                            writeLog("Benenne Datei um von : " + e.FullPath + " -> " + DestFileName);
+                            File.Move(e.FullPath, DestFileName);
                         }
                     }
 
@@ -160,6 +167,14 @@ namespace JoHeHeaderCleaner
                         writeLog("Header aufgenommen: " + _folder[1]);
                     }
 
+                    // Prefix für bearbeitete Dateien.
+                    if (line.Contains("CleanedPrefix="))
+                    {
+                        String[] _cleanedprefix = line.Split('=');
+                        CleanedPrefix = _cleanedprefix[1];
+
+                        writeLog("Prefix für bearbeitete Dateien: " + _cleanedprefix[1]);
+                    }
 
                     counter++;
                 }
@@ -177,7 +192,7 @@ namespace JoHeHeaderCleaner
 
         }
 
-        public static void writeLog(String _message)
+        public  void writeLog(String _message)
         {
 
             
@@ -220,11 +235,11 @@ namespace JoHeHeaderCleaner
 
         }
 
-        public static void writeErrorEventlog(String _msg)
+        public  void writeErrorEventlog(String _msg)
         {
-
+                        
+            // Eventlog
             /*
-
             source String
             Die Quelle, unter der die Anwendung auf dem angegebenen Computer registriert ist.
 
@@ -247,6 +262,26 @@ namespace JoHeHeaderCleaner
 
             EventLog.WriteEntry(source, msg,
                  EventLogEntryType.Error, myEventID, myCategory);
+
+            // Errorfile:
+
+            StreamWriter swerr = null;
+            try
+            {
+                
+                String ErrFile = Path.Combine(monitorFolder, "_JoHeHeaderCleaner_ERROR.txt");
+
+                swerr = new StreamWriter(ErrFile, true);
+                swerr.WriteLine(DateTime.Now.ToString() + ": " + _msg);
+                swerr.Close();
+            }
+            catch (Exception e)
+            {
+                EventLog.WriteEntry(source, "ERROR-Logfile konnte nicht geschrieben werden: %n" + e.Message + "%n" + e.StackTrace,
+                    EventLogEntryType.Error, myEventID, myCategory);
+                writeErrorEventlog(e.Message + "%n" + e.StackTrace);
+
+            }
         }
 
 
