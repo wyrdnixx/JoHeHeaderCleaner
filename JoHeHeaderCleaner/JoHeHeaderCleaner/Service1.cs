@@ -85,7 +85,7 @@ namespace JoHeHeaderCleaner
         {
             //writeLog("Neue Datei gefunden: " + e.Name);
 
-           readConfig(configfile);
+           //readConfig(configfile);
 
             try
             {
@@ -110,7 +110,8 @@ namespace JoHeHeaderCleaner
                         {
                             found = true;
                             writeLog("Header gefunden. Lösche erste Zeile: " + line1);
-                            File.WriteAllLines(e.FullPath, File.ReadAllLines(e.FullPath).Skip(1));
+                            File.WriteAllLines(e.FullPath, File.ReadAllLines(e.FullPath, GetEncoding(e.FullPath)).Skip(1),GetEncoding(e.FullPath));
+                            
 
                             // geänderte Datei umbenennen:
                             String DestFileName = Path.Combine(Path.GetDirectoryName(e.FullPath) + "\\" + CleanedPrefix + e.Name);
@@ -140,6 +141,22 @@ namespace JoHeHeaderCleaner
             }
             
 
+        }
+
+        private static Encoding GetEncoding(string filename)
+        {
+            // This is a direct quote from MSDN:  
+            // The CurrentEncoding value can be different after the first
+            // call to any Read method of StreamReader, since encoding
+            // autodetection is not done until the first call to a Read method.
+
+            using (var reader = new StreamReader(filename, Encoding.Default, true))
+            {
+                if (reader.Peek() >= 0) // you need this!
+                    reader.Read();
+
+                return reader.CurrentEncoding;
+            }
         }
 
 
