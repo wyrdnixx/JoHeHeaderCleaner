@@ -4,3 +4,9 @@ D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleane
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.exe
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.pdb
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.csprojResolveAssemblyReference.cache
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe.config
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.exe
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.pdb
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.pdb

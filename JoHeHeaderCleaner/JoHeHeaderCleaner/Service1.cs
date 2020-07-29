@@ -85,6 +85,8 @@ namespace JoHeHeaderCleaner
         {
             //writeLog("Neue Datei gefunden: " + e.Name);
 
+           readConfig(configfile);
+
             try
             {
                 string extension = Path.GetExtension(e.Name);
@@ -113,7 +115,15 @@ namespace JoHeHeaderCleaner
                             // geänderte Datei umbenennen:
                             String DestFileName = Path.Combine(Path.GetDirectoryName(e.FullPath) + "\\" + CleanedPrefix + e.Name);
                             writeLog("Benenne Datei um von : " + e.FullPath + " -> " + DestFileName);
-                            File.Move(e.FullPath, DestFileName);
+                            try
+                            {
+                                File.Move(e.FullPath, DestFileName);
+                            } catch (Exception ex )
+                            {
+                                writeLog("ERROR: Konnte Datei nicht umbenennen: " + e.FullPath + " -> " + DestFileName);
+                                writeLog("ERROR: " + ex.Message);
+                            }
+                            
                         }
                     }
 

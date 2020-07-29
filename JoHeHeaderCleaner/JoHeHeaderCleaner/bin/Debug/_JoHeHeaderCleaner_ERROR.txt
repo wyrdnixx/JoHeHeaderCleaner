@@ -1,0 +1,8 @@
+29.07.2020 21:48:53: Die Datei "C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_1.csv" konnte nicht gefunden werden.%n   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei JoHeHeaderCleaner.JoHeHeaderCleaner.FileSystemWatcher(Object sender, FileSystemEventArgs e) in C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\Service1.cs:Zeile 113.

@@ -3,3 +3,9 @@ D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleane
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Release\JoHeHeaderCleaner.pdb
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Release\JoHeHeaderCleaner.exe
 D:\MSVS\Workspace\TFS_Workspace\chAos_Projekt\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Release\JoHeHeaderCleaner.pdb
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Release\JoHeHeaderCleaner.exe.config
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Release\JoHeHeaderCleaner.exe
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Release\JoHeHeaderCleaner.pdb
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Release\config.cfg
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Release\JoHeHeaderCleaner.exe
+C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Release\JoHeHeaderCleaner.pdb
