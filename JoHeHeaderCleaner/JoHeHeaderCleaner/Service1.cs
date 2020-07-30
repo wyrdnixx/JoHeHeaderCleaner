@@ -90,7 +90,7 @@ namespace JoHeHeaderCleaner
             try
             {
                 string extension = Path.GetExtension(e.Name);
-                if (extension == ".csv" && !e.Name.Contains(CleanedPrefix))
+                if (extension.ToLower() == ".csv" && !e.Name.Contains(CleanedPrefix))
                 {
                     writeLog("Neue CSV Datei gefunden... Analysiere: " + e.Name);
 
@@ -102,9 +102,14 @@ namespace JoHeHeaderCleaner
 
                     bool found = false;
 
+                    writeLog("Erste Zeile aus Datei :>" + line1 + "<");
+
+                    
                     // Vergleiche mit Einträgen in Header-Suchliste
                     for (int i = 0; i < searchHeaders.Count; i++)
                     {
+                        writeLog("Vergleiche Suchheader:>" + searchHeaders[i] + "<");
+                        
 
                         if (line1 == searchHeaders[i])
                         {
@@ -166,7 +171,7 @@ namespace JoHeHeaderCleaner
             string line;
 
             System.IO.StreamReader file =
-                    new System.IO.StreamReader(_cfgFile);
+                    new System.IO.StreamReader(_cfgFile,GetEncoding(_cfgFile));
 
             
 
