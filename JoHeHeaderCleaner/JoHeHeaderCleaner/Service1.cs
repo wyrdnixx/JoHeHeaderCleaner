@@ -98,7 +98,7 @@ namespace JoHeHeaderCleaner
                     System.Threading.Thread.Sleep(1000);
 
 
-                    string line1 = File.ReadLines(e.FullPath).First(); // gets the first line from file.
+                    string line1 = File.ReadLines(e.FullPath, GetEncoding(e.FullPath)).First(); // gets the first line from file.
 
                     bool found = false;
 

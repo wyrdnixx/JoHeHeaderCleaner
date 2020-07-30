@@ -1,21 +1,17 @@
-
-29.07.2020 21:49:31: MonitorFolder aufgenommen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug
-29.07.2020 21:49:31: Prefix für bearbeitete Dateien: _Cleaned_
-29.07.2020 21:49:31: Header aufgenommen: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
-29.07.2020 21:49:31: Header aufgenommen: Dies ist ein Test Header
-29.07.2020 21:49:31: Neue CSV Datei gefunden... Analysiere: _1.csv
-29.07.2020 21:49:32: Header nicht gefunden. Nicht bearbeiten...
-29.07.2020 21:50:27: MonitorFolder aufgenommen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug
-29.07.2020 21:50:27: Prefix für bearbeitete Dateien: _Cleaned_
-29.07.2020 21:50:27: Header aufgenommen: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
-29.07.2020 21:50:27: Header aufgenommen: Dies ist ein Test Header
-29.07.2020 21:50:27: Header aufgenommen: CPU-Speicher : 
-29.07.2020 21:50:27: Neue CSV Datei gefunden... Analysiere: 1.csv
-29.07.2020 21:50:28: Header gefunden. Lösche erste Zeile: CPU-Speicher : 
-29.07.2020 21:50:28: Benenne Datei um von : C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\1.csv -> C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_Cleaned_1.csv
-29.07.2020 21:50:28: MonitorFolder aufgenommen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug
-29.07.2020 21:50:28: Prefix für bearbeitete Dateien: _Cleaned_
-29.07.2020 21:50:28: Header aufgenommen: KUNDENNUMM;PERSNR;ARBEITGEBE;BEGINN;ENDE;GRUNDSCHLS
-29.07.2020 21:50:28: Header aufgenommen: Dies ist ein Test Header
-29.07.2020 21:50:28: Header aufgenommen: CPU-Speicher : 
-29.07.2020 21:50:47: Programm beendet...
+30.07.2020 22:36:26: Service gestartet...
+30.07.2020 22:36:27: Programm gestartet...
+30.07.2020 22:36:27: Lese Konfigurationsdatei: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
+30.07.2020 22:36:27: MonitorFolder aufgenommen: D:\Schnittstelle_PO
+30.07.2020 22:36:27: MonitorFolder aufgenommen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug
+30.07.2020 22:36:27: Prefix für bearbeitete Dateien: _Cleaned_
+30.07.2020 22:36:27: Header aufgenommen: Dies ist ein Test Header
+30.07.2020 22:36:27: Header aufgenommen: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
+30.07.2020 22:36:27: Header aufgenommen: Kundennummer;PERSNR.;Arbeitgeber;gilt ab;Kostenstelle;Buchungskreis;Aufteilung in %;Erste VST;Dienstart;Funktion
+30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Gilt von;Tarifnummer;Tarifgruppe;TarifStufe;TZ Zähler;TZ Nenner;Arbzeit;Beschäftigtengruppe
+30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Gilt ab;Berufsgruppenschlüssel
+30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;gilt ab;gilt bis
+30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Beginn;Ende;Grund-Schlüssel
+30.07.2020 22:36:44: Neue CSV Datei gefunden... Analysiere: WORKFILE_1_.csv
+30.07.2020 22:36:45: Header gefunden. Lösche erste Zeile: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
+30.07.2020 22:36:45: Benenne Datei um von : C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\WORKFILE_1_.csv -> C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_Cleaned_WORKFILE_1_.csv
+30.07.2020 22:37:03: Programm beendet...
