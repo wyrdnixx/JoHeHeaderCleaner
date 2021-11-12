@@ -14,6 +14,8 @@ namespace JoHeHeaderCleaner
         /// </summary>
         static void Main()
         {
+
+
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
@@ -21,5 +23,10 @@ namespace JoHeHeaderCleaner
             };
             ServiceBase.Run(ServicesToRun);
         }
+
+
+
     }
+
+
 }

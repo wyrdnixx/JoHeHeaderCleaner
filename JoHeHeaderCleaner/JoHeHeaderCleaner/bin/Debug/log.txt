@@ -1,42 +1,22 @@
-30.07.2020 22:36:26: Service gestartet...
-30.07.2020 22:36:27: Programm gestartet...
-30.07.2020 22:36:27: Lese Konfigurationsdatei: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
-30.07.2020 22:36:27: MonitorFolder aufgenommen: D:\Schnittstelle_PO
-30.07.2020 22:36:27: MonitorFolder aufgenommen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug
-30.07.2020 22:36:27: Prefix für bearbeitete Dateien: _Cleaned_
-30.07.2020 22:36:27: Header aufgenommen: Dies ist ein Test Header
-30.07.2020 22:36:27: Header aufgenommen: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
-30.07.2020 22:36:27: Header aufgenommen: Kundennummer;PERSNR.;Arbeitgeber;gilt ab;Kostenstelle;Buchungskreis;Aufteilung in %;Erste VST;Dienstart;Funktion
-30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Gilt von;Tarifnummer;Tarifgruppe;TarifStufe;TZ Zähler;TZ Nenner;Arbzeit;Beschäftigtengruppe
-30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Gilt ab;Berufsgruppenschlüssel
-30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;gilt ab;gilt bis
-30.07.2020 22:36:27: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Beginn;Ende;Grund-Schlüssel
-30.07.2020 22:36:44: Neue CSV Datei gefunden... Analysiere: WORKFILE_1_.csv
-30.07.2020 22:36:45: Header gefunden. Lösche erste Zeile: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
-30.07.2020 22:36:45: Benenne Datei um von : C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\WORKFILE_1_.csv -> C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_Cleaned_WORKFILE_1_.csv
-30.07.2020 22:37:03: Programm beendet...
-30.07.2020 22:42:21: Service gestartet...
-30.07.2020 22:42:21: Programm gestartet...
-30.07.2020 22:42:21: Lese Konfigurationsdatei: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
-30.07.2020 22:42:21: MonitorFolder aufgenommen: D:\Schnittstelle_PO
-30.07.2020 22:42:21: MonitorFolder aufgenommen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug
-30.07.2020 22:42:21: Prefix für bearbeitete Dateien: _Cleaned_
-30.07.2020 22:42:21: Header aufgenommen: Dies ist ein Test Header
-30.07.2020 22:42:21: Header aufgenommen: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
-30.07.2020 22:42:21: Header aufgenommen: Kundennummer;PERSNR.;Arbeitgeber;gilt ab;Kostenstelle;Buchungskreis;Aufteilung in %;Erste VST;Dienstart;Funktion
-30.07.2020 22:42:21: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Gilt von;Tarifnummer;Tarifgruppe;TarifStufe;TZ Zähler;TZ Nenner;Arbzeit;Beschäftigtengruppe
-30.07.2020 22:42:21: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Gilt ab;Berufsgruppenschlüssel
-30.07.2020 22:42:21: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;gilt ab;gilt bis
-30.07.2020 22:42:21: Header aufgenommen: Kunde;PERSNR.;Arbeitgeber;Beginn;Ende;Grund-Schlüssel
-30.07.2020 22:42:41: Neue CSV Datei gefunden... Analysiere: test.csv
-30.07.2020 22:42:42: Header gefunden. Lösche erste Zeile: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
-30.07.2020 22:42:42: Benenne Datei um von : C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\test.csv -> C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_Cleaned_test.csv
-30.07.2020 22:42:43: ERROR: Konnte Datei nicht umbenennen: C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\test.csv -> C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_Cleaned_test.csv
-30.07.2020 22:42:43: ERROR: Eine Datei kann nicht erstellt werden, wenn sie bereits vorhanden ist.
-
-30.07.2020 22:43:09: Neue CSV Datei gefunden... Analysiere: test1.csv
-30.07.2020 22:43:10: Header nicht gefunden. Nicht bearbeiten...
-30.07.2020 22:43:37: Neue CSV Datei gefunden... Analysiere: test.csv
-30.07.2020 22:43:38: Header gefunden. Lösche erste Zeile: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
-30.07.2020 22:43:38: Benenne Datei um von : C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\test.csv -> C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\_Cleaned_test.csv
-30.07.2020 22:43:47: Programm beendet...
+12.11.2021 01:55:29: Neue CSV Datei gefunden... Analysiere: aned_1test.csv
+12.11.2021 01:55:30: Erste Zeile aus Datei :>3299;003285;00000000005;20180101;;Gehrke;Daniela;W;02;19760131;V;;Tulpenweg 3;88069;Tettnang;;;;0042;deutsch<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Dies ist ein Test Header<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Kundennummer;PERSNR.;Arbeitgeber;gilt ab;Kostenstelle;Buchungskreis;Aufteilung in %;Erste VST;Dienstart;Funktion<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;Gilt von;Tarifnummer;Tarifgruppe;TarifStufe;TZ Zähler;TZ Nenner;Arbzeit;Beschäftigtengruppe<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;Gilt ab;Berufsgruppenschlüssel<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;gilt ab;gilt bis<
+12.11.2021 01:55:30: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;Beginn;Ende;Grund-Schlüssel<
+12.11.2021 01:55:30: Header nicht gefunden. Nicht bearbeiten...
+12.11.2021 01:56:00: Neue CSV Datei gefunden... Analysiere: aned_1test - Kopie.csv
+12.11.2021 01:56:01: Erste Zeile aus Datei :>Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität<
+12.11.2021 01:56:01: Vergleiche Suchheader:>Dies ist ein Test Header<
+12.11.2021 01:56:01: Vergleiche Suchheader:>Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität<
+12.11.2021 01:56:01: Header gefunden. Lösche erste Zeile: Kundennummer;PERSNR.;Arbeitgeber;Eintritt;Austritt;Nachname;Vorname;Geschlecht;Anrede;Geb-Datum;Familienstand;Titel;Straße Hausnummer;Postleitzahl;Ort;Telefon dienst;E-Mail dienst;Handy;SAB Nr;Nationalität
+12.11.2021 01:56:02: Benenne Datei um von : C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\aned_1test - Kopie.csv -> C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\_Cleaned_aned_1test - Kopie.csv
+12.11.2021 01:56:02: Vergleiche Suchheader:>Kundennummer;PERSNR.;Arbeitgeber;gilt ab;Kostenstelle;Buchungskreis;Aufteilung in %;Erste VST;Dienstart;Funktion<
+12.11.2021 01:56:02: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;Gilt von;Tarifnummer;Tarifgruppe;TarifStufe;TZ Zähler;TZ Nenner;Arbzeit;Beschäftigtengruppe<
+12.11.2021 01:56:02: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;Gilt ab;Berufsgruppenschlüssel<
+12.11.2021 01:56:02: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;gilt ab;gilt bis<
+12.11.2021 01:56:02: Vergleiche Suchheader:>Kunde;PERSNR.;Arbeitgeber;Beginn;Ende;Grund-Schlüssel<
+12.11.2021 01:56:26: Programm beendet...

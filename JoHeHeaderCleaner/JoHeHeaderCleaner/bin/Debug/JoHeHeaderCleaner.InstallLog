@@ -1,0 +1,29 @@
+﻿Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe wird installiert.
+Betroffene Parameter:
+   logtoconsole = 
+   logfile = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog
+   assemblypath = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe
+Dienst JoHeHeaderCleaner wird installiert...
+Die EventLog-Quelle JoHeHeaderCleaner im Protokoll Application wird erstellt...
+Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe wird zurückgesetzt.
+Betroffene Parameter:
+   logtoconsole = 
+   logfile = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog
+   assemblypath = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe
+Der vorherige Zustand des Ereignisprotokolls für die Quelle JoHeHeaderCleaner wird wiederhergestellt.
+Während der Rollbackphase des Installers System.Diagnostics.EventLogInstaller ist eine Ausnahme aufgetreten.
+System.Security.SecurityException: Die Quelle wurde nicht gefunden, aber einige oder alle Ereignisprotokolle konnten nicht durchsucht werden. Protokolle, auf die kein Zugriff möglich war: Security, State.
+Während der Rollbackphase der Installation ist eine Ausnahme aufgetreten. Diese Ausnahme wird ignoriert, und der Rollback wird fortgesetzt. Der ursprüngliche Zustand des Computers wird jedoch möglicherweise nicht vollständig wiederhergestellt, nachdem der Rollback beendet ist.
+Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe wird installiert.
+Betroffene Parameter:
+   logtoconsole = 
+   logfile = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog
+   assemblypath = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe
+Dienst JoHeHeaderCleaner wird installiert...
+Dienst JoHeHeaderCleaner wurde installiert.
+Die EventLog-Quelle JoHeHeaderCleaner im Protokoll Application wird erstellt...
+Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe wird ausgeführt.
+Betroffene Parameter:
+   logtoconsole = 
+   logfile = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog
+   assemblypath = C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe

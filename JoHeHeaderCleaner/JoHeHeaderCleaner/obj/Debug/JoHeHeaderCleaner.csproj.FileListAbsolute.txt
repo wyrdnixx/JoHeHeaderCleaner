@@ -10,3 +10,13 @@ C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderC
 C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
 C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe
 C:\MSVS_Workspace\ulewu\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.pdb
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\config.cfg
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe.config
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.pdb
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.csproj.AssemblyReference.cache
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.csproj.CoreCompileInputs.cache
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.exe
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.pdb
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.ProjectInstaller.resources
+C:\Users\ulewu.CHAOS\Source\Repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\obj\Debug\JoHeHeaderCleaner.csproj.GenerateResource.cache

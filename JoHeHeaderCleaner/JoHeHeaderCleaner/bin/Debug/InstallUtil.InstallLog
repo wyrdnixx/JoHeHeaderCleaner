@@ -1,0 +1,31 @@
+﻿
+Eine transaktive Installation wird ausgeführt.
+
+Die Installationsphase wird gestartet.
+Die Protokolldatei enthält den Fortschritt der Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe.
+Die Datei befindet sich in C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog.
+
+Während der Installationsphase ist eine Ausnahme aufgetreten.
+System.Security.SecurityException: Die Quelle wurde nicht gefunden, aber einige oder alle Ereignisprotokolle konnten nicht durchsucht werden. Protokolle, auf die kein Zugriff möglich war: Security, State.
+
+Die Rollbackphase der Installation wird gestartet.
+Die Protokolldatei enthält den Fortschritt der Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe.
+Die Datei befindet sich in C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog.
+
+Die Rollbackphase wurde erfolgreich abgeschlossen.
+
+Die transaktive Installation ist abgeschlossen.
+
+Eine transaktive Installation wird ausgeführt.
+
+Die Installationsphase wird gestartet.
+Die Protokolldatei enthält den Fortschritt der Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe.
+Die Datei befindet sich in C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog.
+
+Die Installationsphase ist abgeschlossen, und die Commitphase beginnt.
+Die Protokolldatei enthält den Fortschritt der Assembly C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.exe.
+Die Datei befindet sich in C:\Users\ulewu.CHAOS\source\repos\wyrdnixx\JoHeHeaderCleaner\JoHeHeaderCleaner\JoHeHeaderCleaner\bin\Debug\JoHeHeaderCleaner.InstallLog.
+
+Die Commitphase wurde erfolgreich abgeschlossen.
+
+Die transaktive Installation ist abgeschlossen.
